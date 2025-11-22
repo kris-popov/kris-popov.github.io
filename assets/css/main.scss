@@ -41,3 +41,21 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+body {
+  background-color: #ffffff;
+  color: #010f26;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li, td, th,
+a,
+.site-header, .site-nav, .site-nav a,
+.site-footer {
+  color: #010f26;
+}
+
+/* Optional: darker hover link */
+a:hover {
+  color: #013a7a;
+}
