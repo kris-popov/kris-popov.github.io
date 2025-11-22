@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "custom" # Currently available options are "default", "air"
 title                    : "Kristian Popov"
 title_separator          : "-"
 name                     : &name "Kristian Popov"
