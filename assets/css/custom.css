@@ -1,0 +1,38 @@
+---
+---
+
+/* Global text color */
+body {
+  background-color: #ffffff;
+  color: #010f26;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #010f26;
+}
+
+/* Paragraphs, lists, table text */
+p, li, td, th {
+  color: #010f26;
+}
+
+/* Links (unhovered) */
+a {
+  color: #010f26;
+}
+
+/* Links on hover */
+a:hover {
+  color: #013a7a; /* optional slightly brighter navy */
+}
+
+/* Navigation / menu text */
+.site-header, .site-nav, .site-nav a {
+  color: #010f26;
+}
+
+/* Footer text */
+.site-footer {
+  color: #010f26;
+}
