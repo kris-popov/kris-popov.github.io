@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Kristian Popov"
   pronouns         : # example: "she/her"  
-  bio              : "Current Master's student in Aerospace Engineering at the University of Michigan."
+  bio              : "Master's student in Aerospace Engineering at the University of Michigan."
   location         : "Ann Arbor, MI"
   employer         : "University of Michigan"
   uri              : # URL
@@ -63,15 +63,16 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "kristian-c-popov"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
+  substack         : "krispopov"
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "KristianCPopov"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
