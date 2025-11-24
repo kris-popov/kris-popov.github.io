@@ -23,7 +23,7 @@ repository               : "kris-popov/kris-popov.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Kristian Popov"
   pronouns         : # example: "she/her"  
   bio              : "Master's student in Aerospace Engineering at the University of Michigan."
