@@ -7,11 +7,44 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master's student studying Aerospace Engineering at the University of Michigan. I previously received a Bachelor's in Aerospace Engineering from the University of Michigan. My research focuses on creating algorithms that enable autonomous systems to act in the world, drawing on ideas from machine learning, control theory, and optimization.
+I received my BSE and MSE in Aerospace Engineering at the University of Michigan - Go Blue! While at Michigan, I worked on robotics research in Dmitry Berenson's lab, served as a space systems engineer in James Cutler's and Mark Moldwin's labs, and interned for the Michigan football team.
 
-Test
-======
-Hi, I'm troubleshooting rn...
+<!-- Research and Engineering Interests
+====== -->
+I am interested in creating algorithms that enable autonomous systems and robots to act in the world, and in building complex systems from first-principles and deploying them to solve real-world problems.
+
+I am also interested in governance, political theory, history, and in studying how we might ensure a safe and sustainable rollout of robotic and intelligent systems in a way that that is beneficial for humanity (what I believe to be the most pressing issue of today).
+
+<h2 class="about-news__heading">News</h2>
+
+{% assign now_ts = "now" | date: "%s" | plus: 0 %}
+{% assign cutoff_ts = now_ts | minus: 31536000 %}
+{% assign news_items = site.news %}
+{% if news_items %}
+  {% assign news_items = news_items | sort: "date" | reverse %}
+{% endif %}
+{% capture recent_news_markup %}
+  {% for item in news_items %}
+    {% assign item_ts = item.date | date: "%s" | plus: 0 %}
+    {% if item_ts <= now_ts and item_ts >= cutoff_ts %}
+      <div class="about-news__item">
+        <time class="about-news__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+        <div class="about-news__title">{{ item.title | escape }}</div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign recent_news_markup = recent_news_markup | strip %}
+
+<div class="about-news">
+  {% if recent_news_markup != "" %}
+    {{ recent_news_markup }}
+  {% else %}
+    <p class="about-news__empty">No news for now, check back soon to see what's up!</p>
+  {% endif %}
+</div>
+
+<!-- In the context of robotic systems, I am particularly interested in answering these four questions: (i) how should we act in an uncertain world? (ii) how do we know when to spend time planning versus acting reactively? (iii) how do we couple high-level actions/commands with low-level controllers for fine movement? (iv) how do we know we are progressing towards our goal? Moreover, -->
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
