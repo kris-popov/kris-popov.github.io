@@ -98,6 +98,17 @@ a:hover {
   font-weight: 500;
 }
 
+.about-news__title a {
+  color: var(--global-link-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-news__title a:hover {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
 .about-news__empty {
   margin: 1.5rem 0;
   text-align: center;

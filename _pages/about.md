@@ -27,9 +27,16 @@ I am also interested in governance, political theory, history, and in studying h
   {% for item in news_items %}
     {% assign item_ts = item.date | date: "%s" | plus: 0 %}
     {% if item_ts <= now_ts and item_ts >= cutoff_ts %}
+      {% assign news_body = item.content | strip %}
       <div class="about-news__item">
         <time class="about-news__date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
-        <div class="about-news__title">{{ item.title | escape }}</div>
+        <div class="about-news__title">
+          {% if news_body != "" %}
+            {{ news_body | markdownify | remove: "<p>" | remove: "</p>" }}
+          {% else %}
+            {{ item.title | escape }}
+          {% endif %}
+        </div>
       </div>
     {% endif %}
   {% endfor %}
