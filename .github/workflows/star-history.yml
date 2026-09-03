@@ -3,8 +3,9 @@ name: Update star history chart
 on:
   push:
     branches:
+      - master
       - main
-    # The job commits the regenerated SVGs back to main. Ignoring them here
+    # The job commits the regenerated SVGs back to the source branch. Ignoring them here
     # means the bot's own commit — which touches nothing else — cannot retrigger
     # this workflow. (GitHub also declines to raise `push` events for commits
     # made with GITHUB_TOKEN, so this is the second of two guards.)
@@ -52,7 +53,7 @@ jobs:
           git add assets/img/star-history-light.svg assets/img/star-history-dark.svg
           git commit -m "chore: refresh star history chart [skip ci]"
           # Regenerating the chart takes about a minute, and update-tocs.yml
-          # triggers on the same push and commits to main in ~15s, so main can
+          # triggers on the same push and commits to the branch in ~15s, so it can
           # move underneath this job. That is a plain non-fast-forward, not a
           # permissions problem, so rebase onto the new tip and retry instead of
           # failing the run. Only the two generated SVGs are in flight here, and
@@ -62,8 +63,8 @@ jobs:
               echo "Pushed on attempt ${attempt}."
               exit 0
             fi
-            echo "Push rejected (main moved); rebasing onto origin/main and retrying."
-            git pull --rebase origin main
+            echo "Push rejected (${GITHUB_REF_NAME} moved); rebasing onto origin/${GITHUB_REF_NAME} and retrying."
+            git pull --rebase origin "${GITHUB_REF_NAME}"
           done
           echo "::error::Could not push the refreshed chart after 3 attempts."
           exit 1
