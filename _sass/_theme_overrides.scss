@@ -2,6 +2,8 @@
   --global-bg-color: #fdf0d2;
   --global-footer-bg-color: #f2efea;
   --global-code-bg-color: #f5f3ef;
+  --global-theme-color: #00a9f1;
+  --global-hover-color: #ff1493;
 }
 
 html[data-theme="dark"] {
@@ -19,6 +21,11 @@ html[data-theme="dark"] {
   object-fit: cover;
 }
 
+.profile .more-info p {
+  display: block;
+  margin: 0;
+}
+
 .post-header .post-title {
   font-weight: 700;
 }
@@ -27,4 +34,12 @@ html[data-theme="dark"] {
 }
 .navbar-brand.title .font-weight-bold {
   font-weight: inherit;
+}
+
+
+.text-hot-pink {
+  color: #ff1493 !important;
+}
+.text-sky-blue {
+  color: #00a9f1 !important;
 }
