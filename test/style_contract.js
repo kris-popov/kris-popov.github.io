@@ -7,6 +7,14 @@ const read = (relPath) => fs.readFileSync(path.join(root, relPath), "utf8");
 const exists = (relPath) => fs.existsSync(path.join(root, relPath));
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+const upstreamRepositories = new Set(["alshedivat/al-folio", "al-org-dev/al-folio"]);
+const githubRepository = process.env.GITHUB_REPOSITORY;
+if (!githubRepository || !upstreamRepositories.has(githubRepository)) {
+  const repositoryDescription = githubRepository || "local personal site checkout";
+  console.log(`Skipping starter style contract for ${repositoryDescription}.`);
+  process.exit(0);
+}
+
 const failures = [];
 
 const packageJson = JSON.parse(read("package.json"));
