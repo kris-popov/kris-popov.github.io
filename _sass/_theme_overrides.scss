@@ -1,0 +1,30 @@
+:root {
+  --global-bg-color: #fdf0d2;
+  --global-footer-bg-color: #f2efea;
+  --global-code-bg-color: #f5f3ef;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #0c1b2b;
+  --global-footer-bg-color: #171d22;
+  --global-code-bg-color: #1b2329;
+
+  --global-text-color: #f4f1e8;
+  --global-text-color-light: #c8c2b4;
+}
+
+.profile img {
+  max-height: 240px;
+  width: auto;
+  object-fit: cover;
+}
+
+.post-header .post-title {
+  font-weight: 700;
+}
+.navbar-brand.title {
+  font-weight: 700 !important;
+}
+.navbar-brand.title .font-weight-bold {
+  font-weight: inherit;
+}

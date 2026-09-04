@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-07-15
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+<!-- [**"Particle-Based Conformal Prediction for Contact-Aware Uncertainty Calibration in Stratified Configuration Spaces"**](https://um-arm-lab.github.io/capture/) has been accepted to COPA! -->
+
+<a href="https://um-arm-lab.github.io/capture/" style="color: #00a9f1;"><strong>"Particle-Based Conformal Prediction for Contact-Aware Uncertainty Calibration in Stratified Configuration Spaces"</strong></a> has been accepted to COPA!
