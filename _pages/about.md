@@ -31,7 +31,7 @@ I received my BSE and MSE in Aerospace Engineering at the University of Michigan
 
 While at Michigan, I worked on robotics research in Dmitry Berenson's lab, served as a space systems engineer in James Cutler's and Mark Moldwin's labs, and interned for the Michigan football team.
 
-I am interested in creating algorithms that enable and robots to act in the world and reason about uncertainty. 
+I am interested in creating algorithms that enable and robots to act in the world and reason about uncertainty.
 
 <!-- What drives my interest in robotics is a desire to see robots deployed around homes and workplaces to make living easier for people. Whether it be by assisting with household chores and cooking or through their deployment in farming and construction, I believe that robots can be strategically utilized to increase human well-being. -->
 
