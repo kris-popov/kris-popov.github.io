@@ -1,9 +1,16 @@
+// :root {
+//   --global-bg-color: #fdf0d2;
+//   --global-footer-bg-color: #f2efea;
+//   --global-code-bg-color: #f5f3ef;
+//   --global-theme-color: #00a9f1;
+//   --global-hover-color: #ff1493;
+// }
 :root {
-  --global-bg-color: #fdf0d2;
-  --global-footer-bg-color: #f2efea;
+  --global-bg-color: #fcfbe5; //#FCFBE9, #FCF6CB
+  --global-footer-bg-color: #E8E2C0;
   --global-code-bg-color: #f5f3ef;
   --global-theme-color: #00a9f1;
-  --global-hover-color: #ff1493;
+  --global-hover-color: #FC6F88; //#FC6F88, #FC82BA
 }
 
 html[data-theme="dark"] {

@@ -27,8 +27,18 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-I received my BSE and MSE in Aerospace Engineering at the University of Michigan - Go Blue! While at Michigan, I worked on robotics research in Dmitry Berenson's lab, served as a space systems engineer in James Cutler's and Mark Moldwin's labs, and interned for the Michigan football team.
+I received my BSE and MSE in Aerospace Engineering at the University of Michigan.
 
-I am interested in creating algorithms that enable autonomous systems and robots to act in the world, and in building complex systems from first-principles and deploying them to solve real-world problems. Read more about my research interests in my <a href="{{ '/research-statement/' | relative_url }}"><strong class="text-hot-pink">research statement</strong></a>.
+While at Michigan, I worked on robotics research in Dmitry Berenson's lab, served as a space systems engineer in James Cutler's and Mark Moldwin's labs, and interned for the Michigan football team.
 
-I am also interested in governance, political theory, history, and in studying how we might ensure a safe and sustainable rollout of robotic and intelligent systems in a way that that is beneficial for humanity (what I believe to be the most pressing issue of today).
+I am interested in creating algorithms that enable and robots to act in the world and reason about uncertainty. 
+
+<!-- What drives my interest in robotics is a desire to see robots deployed around homes and workplaces to make living easier for people. Whether it be by assisting with household chores and cooking or through their deployment in farming and construction, I believe that robots can be strategically utilized to increase human well-being. -->
+
+{% comment %}
+Read more about my research interests in my <a href="{{ '/research-statement/' | relative_url }}"><strong class="text-hot-pink">research statement</strong></a>.
+{% endcomment %}
+
+<!-- I am also interested in governance, political theory, history, and in studying how we might ensure a safe and sustainable rollout of robotic and intelligent systems in a way that that is beneficial for humanity (what I believe to be the most pressing issue of today). -->
+
+<p style="color: #e53935;">This site is currently being migrated, so the Projects tab is not available yet. Please check back soon!</p>
